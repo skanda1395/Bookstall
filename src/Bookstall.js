@@ -10,8 +10,6 @@ export default function Bookstall() {
   useEffect(() => {
     const cachedBooks = JSON.parse(localStorage.getItem("books"));
     if(cachedBooks !== null) setBooks(cachedBooks);
-
-    return () => console.log(JSON.parse(localStorage.getItem("books")));
   }, []);
 
   useEffect(() => {

@@ -1,7 +1,6 @@
 import { memo } from "react";
 
 function BookList(props) {
-  console.log("Booklist renders");
   const { books, handleDelete, handleEdit, toggleRead } = props;
   const readBooks = books.filter(book => book.read);
   const unreadBooks = books.filter(book => !book.read);
